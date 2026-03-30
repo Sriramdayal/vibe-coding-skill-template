@@ -1,9 +1,9 @@
-# Effective Vibe‑Coding Prompts
+# Effective Python Vibe‑Coding Prompts
 
-1. **Be specific about the goal** – “Create a REST endpoint that returns paginated user events.”  
-2. **State performance constraints** – “Expected ≤ 10 k events/sec, latency < 20 ms, memory < 50 MB.”  
-3. **Mention data‑structure preferences** – “Use a hash set for duplicate detection to achieve O(1) look‑up.”  
-4. **Ask for complexity comments** – “Include a comment that specifies the time and space complexity.”  
-5. **Iterate** – Review the AI’s output, then give a follow‑up prompt like “Replace the nested loop with a sliding‑window approach.”  
-6. **Provide context** – Paste relevant type definitions or a snippet of existing code so the model grounds its answer.  
-7. **Leverage the agent’s tools** – Ask the agent to run unit tests, lint, or benchmark the generated code before accepting it.  
+1. **Be specific about the goal** – “Create a FastAPI endpoint that returns paginated user events.”  
+2. **State performance & memory constraints** – “Ensure the generator yields items one at a time to keep memory at O(1).”  
+3. **Mention Python-specific libraries/patterns** – “Use `itertools.groupby` instead of a manual for-loop, and apply `@lru_cache` for memoization.”  
+4. **Enforce Type Hinting & Linters** – “Add strict type hints (`typing.List`, `typing.Optional`, etc.) and ensure it passes `mypy --strict`.”  
+5. **Ask for Testing Boilerplate** – “Include a `pytest` block at the bottom using `pytest.mark.parametrize`.”  
+6. **Iterate** – Review the AI’s output, then give a follow‑up prompt like “Replace the `list.pop(0)` with `collections.deque` for O(1) left-pops.”  
+7. **Leverage the agent’s tools** – Ask the agent to run `pytest`, `ruff`, or `mypy` locally before it delivers the final snippet.

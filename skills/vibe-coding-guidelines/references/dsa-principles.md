@@ -1,17 +1,15 @@
-# DSA Principles for Efficient Code
+# Python DSA Principles for Efficient Code
 
 - **Time‑complexity targets**: Aim for O(n log n) or better; avoid O(n²) unless input size is provably tiny.  
-- **Data‑structure cheat‑sheet**:  
-  - **Hash Set** – O(1) average lookup/insert; use for duplicate detection, membership tests.  
-  - **Hash Map** – O(1) average key‑value access; use for caching, counting, ID‑based look‑ups.  
-  - **Balanced BST (e.g., Red‑Black Tree, AVL)** – O(log n) ordered operations; use when you need sorted keys or range queries.  
-  - **Heap (Min/Max)** – O(log n) insert/extract‑min/max; use for priority queues, streaming top‑k.  
-  - **Union‑Find (Disjoint Set)** – Near‑constant amortized time; use for connectivity / Kruskal’s MST.  
-  - **Trie** – O(L) per string operation (L = key length); use for prefix‑based searches, autocomplete.  
-- **Algorithmic patterns**:  
-  - **Sliding window** – O(n) for subarray/substring problems with monotonic constraints.  
-  - **Two‑pointer** – O(n) for sorted arrays, palindrome checks, sum‑to‑target.  
-  - **Divide‑and‑conquer** – O(n log n) (merge sort, quick‑sort average).  
-  - **Dynamic programming** – O(n·m) when subproblems overlap; prefer memoisation over naïve recursion.  
-- **Space‑time trade‑offs**: Prefer extra O(n) space if it reduces time from O(n²) to O(n log n) or O(n).  
-- **Golden rule**: Always ask the LLM to state the chosen complexity and data structure in a comment above the function.  
+- **Python Data‑Structure Cheat‑Sheet**:  
+  - **Hash Set (`set`)** – O(1) average lookup/insert; use for duplicate detection, intersection (`&`), union (`|`).  
+  - **Hash Map (`dict`, `defaultdict`, `Counter`)** – O(1) average key‑value access; standard `dict` for mapping, `collections.Counter` for frequency counting, `defaultdict` for grouping without `KeyError`.  
+  - **Queues & Stacks (`collections.deque`)** – O(1) push/pop from both ends. Never use `list.pop(0)` as it is O(n).  
+  - **Heap / Priority Queue (`heapq`)** – Min-heap by default. O(log n) insert/extract. Push negative values for a max-heap.  
+  - **Binary Search (`bisect`)** – O(log n) searches in sorted lists. `bisect_left` / `bisect_right` are highly optimized.  
+  - **Iteration Tools (`itertools`)** – Use `chain`, `combinations`, `permutations`, and `groupby` for optimized C-level iteration loops.
+- **Algorithmic patterns (Python specific)**:  
+  - **List/Dict/Set Comprehensions** – Usually faster than explicit `for` loops and `append()`.  
+  - **Generators (`yield`)** – Use to keep memory footprint at O(1) when lazily evaluating large streams of data.  
+  - **Memoization (`functools.cache` / `functools.lru_cache`)** – Instant Dynamic Programming cache without writing a distinct memo map.  
+- **Golden rule**: Always ask the LLM to state the chosen complexity and Python standard library tools used in a comment above the function.

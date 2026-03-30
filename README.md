@@ -1,17 +1,17 @@
-# Vibe‑Coding Skill Template
+# Vibe‑Coding Skill Template (Python Edition)
 
-This repository is a GitHub template that provides a ready‑to‑use `SKILL.md` for vibe‑coding assistants (e.g., Claude Code, Google Antigravity).  
+This repository is a GitHub template that provides a ready‑to‑use `SKILL.md` for vibe‑coding assistants (e.g., Claude Code, Google Antigravity) specifically tailored for **Python-based codebases**.  
 
 ## How to use
 1. Click **Use this template** → **Create a new repository**.  
 2. Clone the new repo.  
 3. In your agent, invoke the skill (e.g., `/skill vibe-coding-guidelines`).  
-4. The agent will automatically load the guidelines from `skills/vibe-coding-guidelines/SKILL.md` and its reference files.  
+4. The agent will automatically load the Python-focused guidelines from `skills/vibe-coding-guidelines/SKILL.md` and its reference files.  
 
 ## Contents
-- `skills/vibe-coding-guidelines/SKILL.md` – core skill definition (YAML front‑matter + process steps).  
-- `references/dsa-principles.md` – cheat‑sheet of optimal data‑structure and algorithm choices.  
-- `references/prompting-tips.md` – short guide on effective vibe‑coding prompts.  
-- `assets/code-template.py` – starter boilerplate the agent can copy when scaffolding new code.  
+- `skills/vibe-coding-guidelines/SKILL.md` – core skill definition for Python projects.  
+- `references/dsa-principles.md` – cheat‑sheet of optimal Python data structures & algorithm choices (`itertools`, `collections`, `heapq`, etc).  
+- `references/prompting-tips.md` – short guide on effective vibe‑coding prompts for Python (PEP 8, type hints, etc.).  
+- `assets/code-template.py` – starter boilerplate the agent can copy when scaffolding new Python code.  
 
-Happy vibe coding! 🚀
+Happy Python vibe coding! 🚀
