@@ -18,6 +18,7 @@ When you equip your AI agent with this template, it will inherently understand h
 - **Optimal DSA Practices**: Strict guidelines to prioritize `O(n log n)` or better time complexities using Python's powerful built-ins like `collections`, `itertools`, and `heapq`.
 - **Robust SDLC Management**: Built-in guardrails for CI/CD, isolated environments (`uv`/`venv`), unit testing (`pytest`), and static analysis (`mypy`/`ruff`).
 - **Prompting Excellence**: A prompt engineering cheat sheet tailored specifically to extract maximum performance from LLMs generating Python.
+- **Context Engineering**: Guidelines for curating the agent's context window with pinned files and `.cursorrules` to avoid hallucinations.
 - **Ready-to-Use Boilerplate**: Pre-configured code templates featuring type hints, PEP-8 compliance, and structured docstrings.
 
 ---
@@ -43,6 +44,7 @@ All the automated instructions live directly in the `skills` directory:
 | 📊 **`dsa-principles.md`** | An actionable cheat sheet dictating optimal Python data structures & algorithm choices. |
 | 🏗️ **`sdlc-guidelines.md`** | SDLC guidelines enforcing CI/CD, testing (`pytest`), modularity, and environment standards. |
 | 🧠 **`prompting-tips.md`** | A reference guide on writing highly effective, constraints-based Python prompts. |
+| 🧩 **`context-engineering.md`** | Best practices for managing the AI's context window, pinning files, and enforcing global rules. |
 | 📄 **`code-template.py`** | A baseline starter file the agent duplicates when scaffolding new modules. |
 
 ---
