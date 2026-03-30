@@ -12,6 +12,7 @@ This repository is a GitHub template that provides a ready‑to‑use `SKILL.md`
 - `skills/vibe-coding-guidelines/SKILL.md` – core skill definition for Python projects.  
 - `references/dsa-principles.md` – cheat‑sheet of optimal Python data structures & algorithm choices (`itertools`, `collections`, `heapq`, etc).  
 - `references/prompting-tips.md` – short guide on effective vibe‑coding prompts for Python (PEP 8, type hints, etc.).  
+- `references/sdlc-guidelines.md` – Python Software Development Life Cycle best practices.  
 - `assets/code-template.py` – starter boilerplate the agent can copy when scaffolding new Python code.  
 
 Happy Python vibe coding! 🚀

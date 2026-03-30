@@ -9,7 +9,7 @@ description: Use when starting a new Python feature or writing code with vibe co
 - You want the agent to generate Pythonic code that follows PEP 8, uses appropriate typing, and leverages Python's standard library for optimal data‑structures.  
 
 ## What This Skill Does
-1. **Load reference files** – `references/dsa-principles.md` and `references/prompting-tips.md`.  
+1. **Load reference files** – `references/dsa-principles.md`, `references/prompting-tips.md`, and `references/sdlc-guidelines.md`.  
 2. **Apply DSA & Python constraints** – Prefer O(n log n) or better. Use built-ins like `set()`, `dict()`, `collections.defaultdict`, `collections.deque`, and `heapq`. Avoid unnecessary loops if `itertools` or comprehensions work better.  
 3. **Enforce vibe‑coding style** – Keep prompts short and context‑rich. Ensure all generated code includes strict type hints and Google/NumPy-style docstrings.  
 4. **Output specification** – Return a Python code block satisfying the request, strict type checks, and optimal DSA, optionally followed by a brief explanation of the algorithms used.  
